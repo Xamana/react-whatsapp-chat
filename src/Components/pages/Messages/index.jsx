@@ -5,7 +5,7 @@ import styles from './Messages.module.css';
 import { ContactsItem } from '../../ContactsItem';
 import axios from 'axios';
 import { useSelector, useDispatch } from 'react-redux';
-import { useActionData, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import { createChats, addMeMessage, addReceivingMessage } from '../../../redux/slice/chatsSlice';
 import { UserChat } from '../../UserChat';
@@ -96,7 +96,8 @@ export const Messages = () => {
 
   React.useEffect(() => {
     getMessages();
-  }, []);
+    return 
+  });
 
   return (
     <div className={styles.messagesWrapper}>
