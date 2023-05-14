@@ -1,0 +1,29 @@
+.users {
+      margin: 0;
+      cursor: pointer;
+      padding-left: 16px;
+}
+
+.avatar {
+      width: 50px;
+}
+
+.users {
+      height: 72px;
+      display: flex;
+}
+
+.mainInfo {
+      margin: 10px 16px;
+      width: 100%;
+      border-bottom: 1px solid gray ;
+}
+
+.lastMessage {
+      font-size: 13px;
+      color: rgb(153, 155, 156);
+}
+
+.activeContact {
+      background-color: rgb(58, 69, 75);
+}

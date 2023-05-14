@@ -1,0 +1,104 @@
+.chat {
+      width: 100%;
+      min-height: 100%;
+      background-color: rgb(34, 46, 53);
+}
+
+.messages {
+      height: 100%;
+      display: grid;
+      grid-template-rows: 80px 1fr 80px;
+}
+
+.messageForm {
+      max-width: 100%;
+      height: 80px;
+      background-color: rgb(32, 44, 51);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+.inputMessage {
+      height: 30px;
+      max-width: 100%;
+      width: 100%;
+      padding: 25px 5px;
+      border-radius: 16px ;
+      border: none;
+      margin-left: 60px;
+      background-color: rgb(42, 57, 66);
+      color: white;
+      padding-left: 30px;
+      transition: 0.1s ease-in-out;
+}
+
+.inputMessage:hover {
+      background-color: rgb(60, 83, 95);
+}
+
+.inputButton {
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+      margin: 20px;
+      background-color: rgb(32, 44, 51);
+      
+}
+
+.inputButton:hover svg {
+      fill: rgb(73, 68, 68);
+}
+
+.inputButton svg {
+      fill: gray;
+      border: none;
+      width: 20px;
+      height: 20px;
+}
+.userInfo {
+      display: flex;
+      align-items: center;
+}
+
+.userIcon {
+      height: 50px;
+      width: 50px;
+      margin: 0 30px;
+}
+
+.userName {
+      
+}
+
+.chatWindow {
+    background-color: rgb(11, 20, 26);
+    overflow-y: auto;
+}
+
+.messageBlock {
+      margin: 10px;
+      padding: 10px 20px;
+      min-width: 300px;
+      width: 300px;
+      
+      border-radius: 16px;
+}
+
+.me {
+      margin-left: auto;
+      background-color: rgb(44, 53, 58);
+}
+
+.from {
+      background-color: rgb(17, 27, 33);
+}
+
+.placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(11, 20, 26);
+}
+

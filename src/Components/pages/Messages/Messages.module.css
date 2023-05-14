@@ -1,0 +1,71 @@
+.messagesWrapper {
+      max-width: 1600px;
+      width: 100%;
+      max-height: 800px;
+      height: 100vh;
+      margin: 38px;
+      display: flex;
+}
+
+.chats {
+      max-width: 450px;
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      background-color: rgb(34, 46, 53);
+      border: 1px solid rgb(58, 77, 88);
+}
+
+
+.messages {
+      height: 100%;
+      display: grid;
+      grid-template-rows: 80px 1fr 80px;
+}
+
+.messageForm {
+      max-width: 100%;
+      height: 80px;
+      background-color: rgb(32, 44, 51);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+
+
+
+
+.search {
+      display: flex;
+      align-items: center;
+}
+
+.searchInput {
+      flex: 1;
+      height: 30px;
+      max-width: 100%;
+      padding: 18px 20px;
+      border-radius: 16px ;
+      border: none;
+      background-color: rgb(42, 57, 66);
+      margin: 10px 20px;
+      color: white;
+}
+
+.searchInput:hover {
+      background-color: rgb(60, 83, 95);
+}
+
+.searchButton {
+      width: 80px;
+      height: 36px;
+      background-color: rgb(42, 57, 66);
+      color: white;
+      border-radius: 16px;
+      margin: 10px;
+}
+
+.searchButton:hover {
+      background-color: rgb(60, 83, 95);
+}
