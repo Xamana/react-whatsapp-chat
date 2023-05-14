@@ -88,7 +88,7 @@ export const Messages = () => {
       }
     } catch (e) {
       setTimeout(() => navigate('/'), 5000);
-      console.log('error11', e);
+      alert('Что то пошло не так, проверьте idInstance и apiTokenInstance, сейчас вы будете переброшенны на сайт авторизации', e);
     }
   };
 
