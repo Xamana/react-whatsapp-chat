@@ -35,7 +35,6 @@ export const ContactsItem = (props) => {
 
             <div className={styles.mainInfo}>
               <div className={styles.name}>{key}</div>
-              <div className={styles.lastMessage}>ФЫВфывфывывфывфвфывфы</div>
             </div>
           </div>
       ))}

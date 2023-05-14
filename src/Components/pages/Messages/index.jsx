@@ -15,7 +15,6 @@ export const Messages = () => {
   const navigate = useNavigate();
 
   const [inputMessageValue, setInputMessageValue] = React.useState('');
-  const [searchValue, setSearchValue] = React.useState('');
   const [contactInput, setContactInput] = React.useState('');
   const [currentContact, setCurrentContact] = React.useState('');
   const [exitChat, setExitChat] = React.useState(false);
@@ -117,16 +116,6 @@ export const Messages = () => {
           <button className={styles.searchButton} onClick={addNewContact}>
             Добавить
           </button>
-        </div>
-        <div className={styles.search}>
-          <input
-            type='text'
-            placeholder='Поиск'
-            value={searchValue}
-            onChange={(e) => setSearchValue(e.target.value)}
-            className={styles.searchInput}
-          />
-          <button className={styles.searchButton}>Поиск</button>
         </div>
         <ContactsItem
           contacts={contacts}

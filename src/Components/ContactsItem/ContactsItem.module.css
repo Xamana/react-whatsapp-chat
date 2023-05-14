@@ -17,6 +17,8 @@
       margin: 10px 16px;
       width: 100%;
       border-bottom: 1px solid gray ;
+      display: flex;
+      align-items: center;
 }
 
 .lastMessage {
