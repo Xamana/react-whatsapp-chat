@@ -11,9 +11,8 @@ export const UserChat = (props) => {
 
       const sendMessageClick = async () => {
             await sendMessage();
-            messagesRef.current?.scrollIntoView({ alignToTop: true, behavior: 'smooth', });
+            messagesRef.current?.scrollIntoView({ alignToTop: true, behavior: 'smooth', })
       }
-
 
   return (
     <div className={s.chat}>

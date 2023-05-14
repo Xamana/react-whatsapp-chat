@@ -18,6 +18,7 @@ export const Messages = () => {
   const [searchValue, setSearchValue] = React.useState('');
   const [contactInput, setContactInput] = React.useState('');
   const [currentContact, setCurrentContact] = React.useState('');
+  const [exitChat, setExitChat] = React.useState(false);
   const idInstance = useSelector((state) => state.loginSlice.idInstance);
   const apiTokenInstance = useSelector((state) => state.loginSlice.ApiTokenInstance);
 
@@ -72,6 +73,7 @@ export const Messages = () => {
   };
 
   const getMessages = async () => {
+    if(exitChat) return;
     try {
       const data = await fetchMessage();
       if (!data) {
@@ -96,8 +98,10 @@ export const Messages = () => {
 
   React.useEffect(() => {
     getMessages();
-    return 
-  });
+    return () => {
+      setExitChat(true)
+    }
+  }, []);
 
   return (
     <div className={styles.messagesWrapper}>
