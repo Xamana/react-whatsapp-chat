@@ -25,6 +25,12 @@ export const chatsSlice = createSlice({
     addReceivingMessage(state, action) {
       const sender = action.payload.body.senderData.sender.slice(0,-5);
       const message = action.payload.body.messageData.textMessageData.textMessage;
+      if(!state.chats[sender]){
+        state.chats[sender] = {
+          messages: [
+          ],
+        };
+      }
       state.chats[sender].messages.push({
         sender: false, 
         message: message,

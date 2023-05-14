@@ -21,7 +21,7 @@ export const Messages = () => {
   const idInstance = useSelector((state) => state.loginSlice.idInstance);
   const apiTokenInstance = useSelector((state) => state.loginSlice.ApiTokenInstance);
 
-  const contacts = useSelector((state) => state.chatsSlice.chats);
+  const contacts = useSelector((state) => ({...state.chatsSlice.chats}));
 
   const dispatch = useDispatch();
 
@@ -77,11 +77,8 @@ export const Messages = () => {
       const data = await fetchMessage();
       if (!data) {
         getMessages();
-      } else if (data.body.messageData.typeMessage === 'textMessage') {
-        const sender = data.body.senderData.sender.slice(0, -5);
-        if (!contacts[sender]) {
-          dispatch(createChats(sender));
-        }
+      } 
+      else if (data.body.messageData.typeMessage === 'textMessage') {
         dispatch(addReceivingMessage(data));
         await confirmFetchingNewMessage(data.receiptId);
         getMessages();
@@ -100,7 +97,7 @@ export const Messages = () => {
     return () => {
       setExitChat(true)
     }
-  });
+  }, []);
 
   return (
     <div className={styles.messagesWrapper}>
