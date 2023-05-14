@@ -1,8 +1,6 @@
 
 # Project Title
 
-A brief description of what this project does and who it's for
-
 Для запуска проекта 
 
 Клонируйте репозиторий или скачайте ZIP.
