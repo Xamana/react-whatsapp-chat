@@ -101,7 +101,7 @@ export const Messages = () => {
     return () => {
       setExitChat(true)
     }
-  }, []);
+  });
 
   return (
     <div className={styles.messagesWrapper}>
