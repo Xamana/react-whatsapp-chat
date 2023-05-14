@@ -11,7 +11,7 @@ export const Header = () => {
       }
       return (
             <header className={styles.header}>
-                  <button onClick={singOut}>Выход</button>
+                  <button onClick={singOut} className={styles.exitButton}>Выход</button>
             </header>
       );
 }

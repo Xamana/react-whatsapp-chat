@@ -6,5 +6,22 @@
       position: sticky;
       top: 0;
       left: 0;
-      display: inline-block;
+      display: flex;
+      align-items: center;
+}
+
+.exitButton {
+      padding: 10px 20px;
+      background-color: rgb(16, 202, 22);
+      border-radius: 16px;
+      display: flex;
+      margin-right: 30px;
+      margin-left: auto;
+
+}
+
+.exitButton:hover {
+      background-color: rgb(33, 235, 26);
+      cursor: pointer;
+      outline: 1px solid rgb(16, 102, 19) ;
 }
